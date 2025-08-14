@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raveena Dharmalingam — Support & Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Raveena Dharmalingam — Support & Full Stack Developer (HTML, CSS, Laravel, PHP, MySQL)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a;           /* slate-900 */
+      --panel:#111827e6;      /* gray-900/90 */
+      --soft:#1f2937;         /* gray-800 */
+      --card:#111827;         /* gray-900 */
+      --muted:#94a3b8;        /* slate-400 */
+      --text:#e5e7eb;         /* gray-200 */
+      --brand:#22d3ee;        /* cyan-400 */
+      --accent:#a78bfa;       /* violet-400 */
+      --ring:#22d3ee44;       /* focus ring */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 20% -10%, #22d3ee22, transparent 60%),
+                  radial-gradient(900px 500px at 120% 20%, #a78bfa22, transparent 60%),
+                  var(--bg);
+      color:var(--text); line-height:1.6;
+    }
+    .container{max-width:1100px; margin:0 auto; padding:24px}
+    header.hero{display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center; padding:36px 0}
+    .pill{display:inline-flex; align-items:center; gap:8px; background:#0b1220; color:#8de9f5; border:1px solid #13324a; padding:6px 10px; border-radius:999px; font-size:12px; letter-spacing:.3px}
+    h1{font-size:40px; line-height:1.1; margin:14px 0 6px; letter-spacing:.2px}
+    .subtitle{font-size:16px; color:var(--muted); max-width:620px}
+    .cta{display:flex; gap:12px; margin-top:18px; flex-wrap:wrap}
+    .btn{appearance:none; border:none; cursor:pointer; font-weight:600; padding:12px 16px; border-radius:14px; transition:.2s transform, .2s background, .2s color, .2s box-shadow}
+    .btn.primary{background:linear-gradient(90deg, var(--brand), var(--accent)); color:#0b1220}
+    .btn.primary:hover{transform:translateY(-1px); box-shadow:0 10px 30px #00000055}
+    .btn.ghost{background:#0b1220; color:#cbd5e1; border:1px solid #1f2a3a}
+    .btn.ghost:hover{transform:translateY(-1px); box-shadow:0 10px 20px #00000040}
+    .card{background:linear-gradient(180deg, #0c1424, #0a101d); border:1px solid #172033; border-radius:18px; box-shadow:0 10px 30px #00000060}
+    .grid{display:grid; gap:18px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    section{margin:30px 0}
+    section h2{font-size:22px; letter-spacing:.3px; margin:0 0 14px}
+    .kvs{display:flex; gap:10px; flex-wrap:wrap}
+    .kv{padding:10px 12px; border-radius:12px; border:1px dashed #243045; color:#c7d2fe; background:#0b1220}
+    .list{display:grid; gap:12px}
+    .proj{padding:18px; display:grid; gap:10px}
+    .proj h3{margin:0; font-size:18px}
+    .proj .meta{font-size:12px; color:var(--muted)}
+    .proj .tags{display:flex; gap:8px; flex-wrap:wrap}
+    .tag{font-size:12px; background:#0b1220; color:#a5f3fc; border:1px solid #153043; padding:4px 8px; border-radius:999px}
+    .row{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+    .resume li{margin:6px 0}
+    .panel{padding:18px}
+    .avatar{aspect-ratio:1/1; border-radius:20px; overflow:hidden; border:1px solid #22314b; background:#0b1220; display:flex; align-items:center; justify-content:center}
+    .avatar svg{width:64%; height:64%; opacity:.9}
+    a{color:#7dd3fc}
+    .footer{opacity:.75; font-size:13px; padding:20px 0}
+    @media (max-width:900px){header.hero{grid-template-columns:1fr}}
+    @media print{.btn,.cta{display:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div>
+        <span class="pill" title="Designation">
+          <!-- briefcase icon -->
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M2 13h20"/></svg>
+          Support & Full Stack Developer
+        </span>
+        <h1>Raveena Dharmalingam</h1>
+        <p class="subtitle">Building robust web modules with Laravel/PHP & MySQL, clean UIs with HTML/CSS, and hands‑on experience in logistics management systems (Orbit), HRIS file uploads, date validation, and bank settlements workflows.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+        <div style="margin-top:14px" class="kvs">
+          <span class="kv">HTML & CSS</span>
+          <span class="kv">Laravel / PHP</span>
+          <span class="kv">MySQL</span>
+          <span class="kv">Yii2</span>
+          <span class="kv">AJAX / jQuery</span>
+          <span class="kv">Logistics Domain</span>
+        </div>
+      </div>
+      <div class="avatar card panel" aria-hidden="true">
+        <!-- placeholder avatar -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+      </div>
+    </header>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="grid cols-2">
+        <article class="proj card">
+          <div class="panel">
+            <div class="row">
+              <h3>Orbit — Logistics Management System</h3>
+              <span class="meta">Laravel · PHP · MySQL · HTML · CSS</span>
+            </div>
+            <p>Built modules for freight letter management, branch‑wise bank settlements, and HRIS integration. Automated Excel parsing to auto‑fill fields (e.g., <code>return_distance</code>) and added AJAX validations for dates and forms.</p>
+            <div class="tags">
+              <span class="tag">Freight Letters</span>
+              <span class="tag">HRIS Upload</span>
+              <span class="tag">Excel Import</span>
+              <span class="tag">AJAX Validation</span>
+            </div>
+            <p class="meta">Role: Full Stack Developer — collaborating with “Ganesh Sir” for approvals, sprint delivery & UAT fixes.</p>
+            <div class="row">
+              <a href="#" aria-label="Orbit case study">Case Study</a>
+              <span class="meta">•</span>
+              <a href="#" aria-label="GitHub repo">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="proj card">
+          <div class="panel">
+            <div class="row">
+              <h3>Bank Settlements & Clearance Module</h3>
+              <span class="meta">Yii2 · PHP · MySQL</span>
+            </div>
+            <p>Designed a clearance workflow: select records via checkboxes, pass IDs securely to backend, perform DB updates, and export Tally‑ready XML (cost centre allocations, bill references, branch totals).</p>
+            <div class="tags">
+              <span class="tag">Tally XML</span>
+              <span class="tag">Cost Centres</span>
+              <span class="tag">Branch Totals</span>
+              <span class="tag">Reports</span>
+            </div>
+            <div class="row">
+              <a href="#" aria-label="Module details">Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid cols-3">
+        <div class="card panel">
+          <h3>Frontend</h3>
+          <ul class="resume">
+            <li>HTML5, CSS3 (responsive, utility‑first mindset)</li>
+            <li>Clean UI components, forms, validation</li>
+            <li>Basic JS & jQuery for interactions</li>
+          </ul>
+        </div>
+        <div class="card panel">
+          <h3>Backend</h3>
+          <ul class="resume">
+            <li>PHP (Laravel, Yii2), REST APIs</li>
+            <li>Auth, validation, file handling, queues</li>
+            <li>Excel import/export pipelines</li>
+          </ul>
+        </div>
+        <div class="card panel">
+          <h3>Database & Tools</h3>
+          <ul class="resume">
+            <li>MySQL (schema design, queries, optimization)</li>
+            <li>Git, Postman, cPanel, Linux basics</li>
+            <li>Integration: HRIS, Tally XML</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="list">
+        <div class="card panel">
+          <h3>Support & Full Stack Developer — <span class="meta">2023 – Present</span></h3>
+          <ul class="resume">
+            <li>Developed logistics ERP features (Orbit), improved performance & reliability of freight & settlements.</li>
+            <li>Integrated Orbit server with HRIS for automated file uploads; added server‑to‑server flows.</li>
+            <li>Built Yii2 date validation via AJAX before form submission; enforced edge‑case rules.</li>
+            <li>Automated Excel extraction to auto‑fill form fields (e.g., return distance from Column G).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education">
+      <h2>Education & Certifications</h2>
+      <div class="card panel">
+        <ul class="resume">
+          <li>Bachelor’s Degree — Computer Science / Information Technology (update with your details)</li>
+          <li>Online courses: Laravel, PHP & MySQL (add certificates/links)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card panel">
+        <div class="grid cols-2" style="align-items:start">
+          <div>
+            <p>Email: <a href="mailto:raveena@example.com">raveena@example.com</a></p>
+            <p>LinkedIn: <a href="#">linkedin.com/in/raveena</a></p>
+            <p>GitHub: <a href="#">github.com/raveena</a></p>
+          </div>
+          <form id="msg" class="card panel" style="background:#0b1220; border-color:#1d2a42" onsubmit="event.preventDefault(); sendMsg();">
+            <label for="name">Your Name</label>
+            <input id="name" required placeholder="John Doe" style="width:100%; margin:6px 0 10px; padding:10px 12px; border-radius:10px; border:1px solid #1f2a3a; background:#0a1222; color:var(--text); outline:none" />
+            <label for="email">Your Email</label>
+            <input id="email" type="email" required placeholder="you@example.com" style="width:100%; margin:6px 0 10px; padding:10px 12px; border-radius:10px; border:1px solid #1f2a3a; background:#0a1222; color:var(--text); outline:none" />
+            <label for="message">Message</label>
+            <textarea id="message" required rows="4" placeholder="Hello Raveena..." style="width:100%; margin:6px 0 10px; padding:10px 12px; border-radius:10px; border:1px solid #1f2a3a; background:#0a1222; color:var(--text); outline:none"></textarea>
+            <button class="btn primary" type="submit" style="width:100%">Send</button>
+            <p id="msgStatus" class="meta" style="margin:8px 0 0"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">© <span id="y"></span> Raveena Dharmalingam · Built with HTML & CSS</footer>
+  </div>
+
+  <script>
+    // tiny UX niceties
+    document.getElementById('y').textContent = new Date().getFullYear();
+    function sendMsg(){
+      const status = document.getElementById('msgStatus');
+      status.textContent = 'Thanks! Your message was recorded (demo). Replace this with a real endpoint.';
+      status.style.color = '#86efac';
+      setTimeout(()=>{ status.textContent=''; document.getElementById('msg').reset(); }, 2500);
+    }
+  </script>
+</body>
+</html>
